@@ -1,0 +1,21 @@
+<div ng-controller="ToDoCntrl">
+	<div>
+		<input type="text" ng-model="task" placeholder="Enter the task..">
+		<button ng-click="createTask()" 
+		ng-show="isEditting">Create Task</button>
+		<button ng-click="updateTask(task, 'save')" 
+		ng-show="!isEditting">Save Task</button>
+		<br>
+		<br>
+		<div ng-show="tasks.length > 0">
+			<table border="1px solid" style="border-collapse: collapse;margin-bottom: 30px;">
+				<tr><th>Task</th><th>Edit</th><th>Delete</th></tr>
+				<tr ng-repeat="task in tasks">
+					<td>{{task.task}}</td>
+					<td><button ng-click="edit(task)">Edit</button></td>
+					<td><button ng-click="delete(task)">Delete</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
