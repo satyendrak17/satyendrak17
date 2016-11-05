@@ -1,0 +1,21 @@
+<div ng-controller="MovieCntrl">
+	<div>
+		<input type="text" ng-model="movieName" placeholder="Enter the Movie Name..">
+		<button ng-click="createMovie(movieName)" 
+		ng-show="isEditting">Create Movie</button>
+		<button ng-click="updateMovie(movieName)" 
+		ng-show="!isEditting">Update Movie</button>
+		<br>
+		<br>
+		<div ng-show="movies.length > 0">
+			<table border="1px solid" style="border-collapse: collapse;margin-bottom: 30px;">
+				<tr><th>Movies</th><th>Edit</th><th>Delete</th></tr>
+				<tr ng-repeat="movie in movies">
+					<td>{{movie.movieName}}</td>
+					<td><button ng-click="edit(movie)">Edit</button></td>
+					<td><button ng-click="delete(movie)">Delete</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
