@@ -16,6 +16,8 @@
 // Push the files to server
 
 6. git push remoteName <branchname>master;
+NOTE - TO CLONE A SINGLE BRANCH -  git clone -b MeanMoviesDemo --single-branch https://github.com/satyendrak17/satyendrak17.git
+
 
 // BRANCHING--
 
