@@ -1,0 +1,44 @@
+---GIT basic usage steps --
+
+1. git init - will initialize a repo in the sppecified folder.
+
+2. git status -  To check the status of the files.\
+
+3. git add <filename> or git add *. // To add single file oor everything
+
+4. git commit -m 'Commit message';
+
+// Create a remote to avoid writing the big url everytime.
+// Remote name is just an alias of the remote url ex - https://github.com/satyendrak17/satyendrak17.git
+
+5. git remote add remoteName https://github.com/satyendrak17/satyendrak17.git
+
+// Push the files to server
+
+6. git push remoteName <branchname>master;
+NOTE - TO CLONE A SINGLE BRANCH -  git clone -b MeanMoviesDemo --single-branch https://github.com/satyendrak17/satyendrak17.git
+
+
+// BRANCHING--
+
+7. create a new branch named "feature_x" and switch to it using
+	git checkout -b feature_x // feature_x is the branch name.
+
+8. switch back to master
+	git checkout master
+	// Sometime we need to do a git fecth in the current branch if not able to checkout the branch.
+	git fetch
+
+9. and delete the branch again if u wish
+	git branch -d feature_x
+	
+10. a branch is not available to others unless you push the branch to your remote repository
+git push origin <branch>
+
+-----Merge and Update---
+
+11. To pull the code from active current branch to other branch --
+
+	git pull remoteOrigin meanCrudbranch --allow-unrelated-histories // To avoid history issue.
+	
+12. git push remoteOrigin master(branch name) // To push the code 
