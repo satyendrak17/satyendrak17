@@ -146,7 +146,7 @@ def generate_pdf(bill_data):
     story = []
     
     # Title
-    title = Paragraph("JEWELLERY SHOP BILL", title_style)
+    title = Paragraph("Radhe Jewellers,", title_style)
     story.append(title)
     story.append(Spacer(1, 20))
     
@@ -400,13 +400,6 @@ def main():
                 pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>'
                 st.markdown(pdf_display, unsafe_allow_html=True)
         
-        with col3:
-            if st.button("📱 Send via WhatsApp", use_container_width=True):
-                send_whatsapp_message(
-                    bill_data['customer_mobile'], 
-                    st.session_state.pdf_buffer,
-                    bill_data
-                )
     
     # Clear bill button
     if st.session_state.bill_data:
