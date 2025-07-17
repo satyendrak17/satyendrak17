@@ -249,7 +249,7 @@ def generate_pdf(bill_data):
     )
     
     address = Paragraph(
-        "📍 Purnadih Phulwaria Chowk, 200 Meters away from the chowk towards high school phulwaria",
+        "📍 Phulwaria-Purnadih Chowk, 200 Meters away from the chowk towards 'High School Phulwaria'",
         address_style
     )
     story.append(address)
