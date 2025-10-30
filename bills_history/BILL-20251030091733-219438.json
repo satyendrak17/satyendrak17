@@ -1,0 +1,25 @@
+{
+    "bill_number": "BILL-20251030091733-219438",
+    "billing_date": "2025-10-30",
+    "shopkeeper_name": "Upendra Kumar",
+    "customer_name": "nklmkl",
+    "customer_mobile": "9898999999",
+    "customer_address": "Puhlwariay",
+    "gst_number": "N/A",
+    "gst_percent": 0.0,
+    "articles": [
+        {
+            "name": "",
+            "weight": 0.099,
+            "rate": 990.0,
+            "metal_type": "Gold",
+            "metal_purity": "",
+            "making_charges_percent": 10.0
+        }
+    ],
+    "base_amount": 98.01,
+    "making_charges_amount": 9.801000000000002,
+    "total_amount": 107.811,
+    "gst_amount": 0,
+    "final_amount": 107.811
+}
