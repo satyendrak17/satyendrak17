@@ -1,0 +1,33 @@
+{
+    "bill_number": "BILL-20251030083628-904984",
+    "billing_date": "2025-10-30",
+    "shopkeeper_name": "Upendra Kumar",
+    "customer_name": "Upendra Soni",
+    "customer_mobile": "9898999999",
+    "customer_address": "Puhlwariay",
+    "gst_number": "N/A",
+    "gst_percent": 3.0,
+    "articles": [
+        {
+            "name": "Nose pin",
+            "weight": 0.1,
+            "rate": 11200.0,
+            "metal_type": "Gold",
+            "metal_purity": "18K",
+            "making_charges_percent": 10.0
+        },
+        {
+            "name": "Payal",
+            "weight": 10.0,
+            "rate": 1000.0,
+            "metal_type": "Silver",
+            "metal_purity": "",
+            "making_charges_percent": 5.0
+        }
+    ],
+    "base_amount": 11120.0,
+    "making_charges_amount": 612.0,
+    "total_amount": 11732.0,
+    "gst_amount": 0,
+    "final_amount": 11732.0
+}

@@ -45,7 +45,7 @@ def run_streamlit():
     print("-" * 50)
     
     try:
-        subprocess.run([sys.executable, "-m", "streamlit", "run", "app.py"])
+        subprocess.run([sys.executable, "-m", "streamlit", "run", "app_save_bill.py"])
     except KeyboardInterrupt:
         print("\n👋 Application stopped by user")
     except Exception as e:
@@ -57,8 +57,8 @@ def main():
     print("=" * 50)
     
     # Check if running in correct directory
-    if not os.path.exists("app.py"):
-        print("❌ Error: app.py not found. Please run this script from the project directory.")
+    if not os.path.exists("app_save_bill.py"):
+        print("❌ Error: app_save_bill.py not found. Please run this script from the project directory.")
         sys.exit(1)
     
     # Install requirements
